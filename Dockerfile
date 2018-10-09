@@ -24,6 +24,7 @@ RUN mkdir -pv /etc/sphinxsearch/conf.d /var/lib/sphinxsearch
 VOLUME ["/var/lib/sphinxsearch"]
 
 # point to sphinx binaries
+RUN echo "export PATH=/sphinx/sphinx-3.0.3/bin:$PATH" >> /etc/profile
 ENV PATH /sphinx/sphinx-3.0.3/bin:$PATH
 RUN indexer -v
 
