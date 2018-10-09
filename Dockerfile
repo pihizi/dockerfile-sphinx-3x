@@ -24,7 +24,7 @@ RUN mkdir -pv /etc/sphinxsearch/conf.d /var/lib/sphinxsearch
 VOLUME ["/var/lib/sphinxsearch"]
 
 # point to sphinx binaries
-ENV PATH "${PATH}:/usr/bin/sphinx/sphinx-3.0.3/bin"
+ENV PATH="${PATH}:/usr/bin/sphinx/sphinx-3.0.3/bin"
 RUN indexer -v
 
 # 9312 Sphinx Plain Port
