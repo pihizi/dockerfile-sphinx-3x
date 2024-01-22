@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM --platform=linux/amd64 debian:latest
 MAINTAINER pihizi@msn.com
 
 ENV SPHINX_VERSION 3.6.1-c9dbeda
